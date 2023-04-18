@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8136AA2B29E9DF76003B71C9 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136AA2A29E9DF76003B71C9 /* Joke.swift */; };
+		8136AA3029EE120C003B71C9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136AA2F29EE120C003B71C9 /* NetworkService.swift */; };
 		81EBC05329E9D4320025BF54 /* JokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC05229E9D4320025BF54 /* JokesApp.swift */; };
 		81EBC05729E9D4330025BF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBC05629E9D4330025BF54 /* Assets.xcassets */; };
 		81EBC05A29E9D4340025BF54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBC05929E9D4340025BF54 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		8136AA2A29E9DF76003B71C9 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		8136AA2F29EE120C003B71C9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		81EBC04F29E9D4320025BF54 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EBC05229E9D4320025BF54 /* JokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApp.swift; sourceTree = "<group>"; };
 		81EBC05629E9D4330025BF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,8 +40,17 @@
 			isa = PBXGroup;
 			children = (
 				8136AA2A29E9DF76003B71C9 /* Joke.swift */,
+				8136AA2C29EE10E3003B71C9 /* Services */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8136AA2C29EE10E3003B71C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8136AA2F29EE120C003B71C9 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		81EBC04629E9D4320025BF54 = {
@@ -158,6 +169,7 @@
 			files = (
 				81EBC05329E9D4320025BF54 /* JokesApp.swift in Sources */,
 				81EBC06229E9D4880025BF54 /* JokeView.swift in Sources */,
+				8136AA3029EE120C003B71C9 /* NetworkService.swift in Sources */,
 				8136AA2B29E9DF76003B71C9 /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
