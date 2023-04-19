@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8136AA2B29E9DF76003B71C9 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136AA2A29E9DF76003B71C9 /* Joke.swift */; };
 		8136AA3029EE120C003B71C9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136AA2F29EE120C003B71C9 /* NetworkService.swift */; };
+		8136AA5C29EEC974003B71C9 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 8136AA5B29EEC974003B71C9 /* Blackbird */; };
+		8136AA5E29EF9F37003B71C9 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8136AA5D29EF9F37003B71C9 /* db.sqlite */; };
 		81EBC05329E9D4320025BF54 /* JokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC05229E9D4320025BF54 /* JokesApp.swift */; };
 		81EBC05729E9D4330025BF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBC05629E9D4330025BF54 /* Assets.xcassets */; };
 		81EBC05A29E9D4340025BF54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EBC05929E9D4340025BF54 /* Preview Assets.xcassets */; };
@@ -18,6 +20,7 @@
 /* Begin PBXFileReference section */
 		8136AA2A29E9DF76003B71C9 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		8136AA2F29EE120C003B71C9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8136AA5D29EF9F37003B71C9 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = ../../../../../Downloads/db.sqlite; sourceTree = "<group>"; };
 		81EBC04F29E9D4320025BF54 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EBC05229E9D4320025BF54 /* JokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApp.swift; sourceTree = "<group>"; };
 		81EBC05629E9D4330025BF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8136AA5C29EEC974003B71C9 /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +43,7 @@
 		8136AA2929E9DF59003B71C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8136AA5D29EF9F37003B71C9 /* db.sqlite */,
 				8136AA2A29E9DF76003B71C9 /* Joke.swift */,
 				8136AA2C29EE10E3003B71C9 /* Services */,
 			);
@@ -113,6 +118,9 @@
 			dependencies = (
 			);
 			name = Jokes;
+			packageProductDependencies = (
+				8136AA5B29EEC974003B71C9 /* Blackbird */,
+			);
 			productName = Jokes;
 			productReference = 81EBC04F29E9D4320025BF54 /* Jokes.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 81EBC04629E9D4320025BF54;
+			packageReferences = (
+				8136AA5A29EEC973003B71C9 /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = 81EBC05029E9D4320025BF54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81EBC05A29E9D4340025BF54 /* Preview Assets.xcassets in Resources */,
+				8136AA5E29EF9F37003B71C9 /* db.sqlite in Resources */,
 				81EBC05729E9D4330025BF54 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8136AA5A29EEC973003B71C9 /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8136AA5B29EEC974003B71C9 /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8136AA5A29EEC973003B71C9 /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81EBC04729E9D4320025BF54 /* Project object */;
 }
