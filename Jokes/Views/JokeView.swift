@@ -19,6 +19,8 @@ struct JokeView: View {
     
     @State var currentJoke: Joke?
     
+    @State var saveToDatabase = false
+    
     //MARK: Computed Properties
     
     var body: some View {
@@ -87,6 +89,8 @@ struct JokeView: View {
                 currentJoke.type,
                 currentJoke.setup,
                 currentJoke.punchline)
+                                
+                                saveToDatabase = true
                                                        
                                                        
                             }
@@ -99,6 +103,7 @@ struct JokeView: View {
                 )
                 // Disable button until punchline is shown
                 .disabled(punchlineOpacity == 0.0 ? true : false)
+                .disabled(saveToDatabase == true ? true : false)
                 // Use another colour to differentiate from first button
                 .tint(.green)
                 .buttonStyle(.borderedProminent)
